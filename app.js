@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2016/3/11.
  */
-var i =246;
+var i =43;
 var superagent = require('superagent');    //引入我们安装好的模块
 var request = require("request");
 var cheerio = require('cheerio');
@@ -29,7 +29,7 @@ function  myfunc(){
 						}
 					})
 					i ++;
-			var dir = './images';
+			var dir = 'E:/images';
 			var downloadImg = function(url, filename){
 					 request.head(url, function(err, res, body){
 						 request(url).pipe(fs.createWriteStream(dir + "/" + filename));
